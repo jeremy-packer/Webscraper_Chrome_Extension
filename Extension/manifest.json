@@ -1,0 +1,27 @@
+{
+    "name": "Webscraper",
+    "version": "2.0",
+    "description": "Tool to webscrape sites",
+    "permissions": ["storage", "tabs", "<all_urls>"],
+    
+	
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["contentScriptText.js"],  
+		"js": ["contentScriptImage.js"]  
+	}],
+	
+    "icons": {
+      "16": "Shovel Image.png"
+    },
+	
+	"browser_action": {
+		"default_icon": "Shovel Image.png",
+		"default_popup": "popup.html"
+	},
+	
+    "manifest_version": 2
+	
+}
+
+ 
